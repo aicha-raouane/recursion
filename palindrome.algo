@@ -1,0 +1,24 @@
+ALGORITHM algorithm_palindrome
+FUNCTION IsPalindrome(CHAR): BOOLEAN
+VAR
+    i, n: INTEGER;
+     ch: STRING
+BEGIN
+n:= ch.lenght-1
+    FOR i FROM 0 TO n/2 STEP 1  DO
+        IF (ch[i]<>ch[n]) THEN
+            write("the stirng is not a palindrom")
+            return: False;
+        else 
+         n:=n-1    
+        END_IF
+        
+    END_FOR
+        write(" the string is a palindrome")
+return: True
+END
+BEGIN
+write("write your sentence")
+read(ch)
+IsPalindrome(ch)
+END
