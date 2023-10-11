@@ -1,6 +1,7 @@
 ALGORITHM algorithm_palindrome
 FUNCTION IsPalindrome(CHAR): BOOLEAN
 VAR
+// declarer les variable
     i, n: INTEGER;
      ch: STRING
 BEGIN
@@ -14,10 +15,12 @@ n:= ch.lenght-1
         END_IF
         
     END_FOR
-        write(" the string is a palindrome")
+        write(" the string is a palindrome") 
+        // display
 return: True
 END
 BEGIN
+// algorithm's body
 write("write your sentence")
 read(ch)
 IsPalindrome(ch)
